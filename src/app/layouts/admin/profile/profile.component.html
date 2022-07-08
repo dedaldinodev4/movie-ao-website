@@ -1,0 +1,71 @@
+<div class="profile-container">
+    <div class="profile-content">
+        <div>
+            <div class="register-container">
+                <div class="form-container">
+                    <div class="card-profile card-user">
+                        <div class="card-body-profile">
+                            <div class="card-text-profile">
+                                <div class="author">
+                                    <div class="block block-one"></div>
+                                    <div class="block block-two"></div>
+                                    <div class="block block-three"></div>
+                                    <div class="block block-four"></div>
+                                    <a href="javascript:void(0)">
+                                        <img class="avatar" src="../../../assets/images/default-avatar.png" alt="...">
+                                        <h5 class="title">{{nameUser}}</h5>
+                                    </a>
+                                    <p class="description-profile">
+                                        {{emailUser}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-description-profile">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam impedit
+                                deleniti distinctio praesentium molestiae tenetur quisquam deserunt nulla omnis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="register-container">
+                <div class="form-container">
+                  <h2>Editar Perfil</h2>
+                 
+                  <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+                    <div class="input-container">
+                      <input
+                        type="text"
+                        name="name"
+                        [(ngModel)]="name"
+                        placeholder="Seu nome"
+                        [value]="nameUser"
+                      />
+                    </div>
+                    <div class="input-container">
+                      <input
+                        type="email"
+                        name="email"
+                        [(ngModel)]="email"
+                        placeholder="Seu E-mail"
+                        [value]="emailUser"
+                      />
+                    </div>
+                    
+                    <div class="cta-container">
+                      <button
+                        class="btn"
+                        type="submit"
+                      >
+                        Salvar Alteração
+                      </button>
+                      
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

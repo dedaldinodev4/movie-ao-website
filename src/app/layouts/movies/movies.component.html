@@ -1,0 +1,20 @@
+<app-loader *ngIf="loading"></app-loader>
+
+
+<div *ngIf="!loading">
+    <app-movie-type 
+        [MAX_Size]="14"
+        [MIN_Size] ="9"
+        [category]="'Drama/Acção'"
+    ></app-movie-type>
+    <app-movie-type 
+        [MAX_Size]="20"
+        [MIN_Size] ="15"
+        [category]="'Sci-Fi/Acção'"
+    ></app-movie-type>
+    <app-movie-type 
+        [MAX_Size]="25"
+        [MIN_Size] ="20"
+        [category]="'Romance'"
+    ></app-movie-type>
+</div>

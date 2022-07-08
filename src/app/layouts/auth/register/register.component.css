@@ -1,0 +1,140 @@
+.register-container {
+    padding: 24px 16px;
+}
+.register-container
+    .form-container {
+        color: #fff;
+      max-width: 475px;
+      border: 1px solid #121214;
+      padding: 20px 16px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #121214;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+      0 2px 4px rgba(0,0,0,0.07), 
+      0 4px 8px rgba(0,0,0,0.07), 
+      0 8px 16px rgba(0,0,0,0.07),
+      0 16px 32px rgba(0,0,0,0.07), 
+      0 32px 64px rgba(0,0,0,0.07);
+    }
+     .form-container > h2 {
+        text-align: left;
+        margin-bottom: 32px;
+      }
+
+      .form-container > p {
+        margin: 10px 0;
+      }
+
+      .form-container > .error-container {
+        padding: 12px;
+        margin: 0 0 16px;
+        color: #fff;
+        background-color: rgb(248, 51, 51);
+        border-radius: 4px;
+      }
+      .form-container > 
+        form > .cta-container {
+          margin-top: 36px;
+          margin-bottom: 60px;
+          text-align: center;
+        }
+        
+        
+        .forgot-password {
+          margin-bottom: 5px;
+          text-align: center;
+          font-size: 1rem;
+        }
+        .forgot-password > a {
+            color: #f34c55;
+            cursor: pointer;
+
+          }
+          .register-btn {
+              margin-top: 15px;
+          }
+  
+          .register-btn a {
+            color: #f34c55;
+          }
+  @media screen and (min-width: 768px) {
+    .register-container {
+      padding: 48px 16px 240px;
+      
+    }
+
+    .register-container  .form-container {
+        padding: 36px;
+    }
+  }
+
+  /* Input Element */
+  .form-container
+  .input-container {
+    margin-bottom: 12px;
+  }
+
+
+
+    .input-container > input {
+        padding: 14px 12px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: #0a0a0a;
+        color: #fff;
+        margin: 10px 0;
+        font-weight: 600;
+    }
+
+
+    .input-container > input:focus {
+        border: 2px solid #f34c55;
+        border-radius: 5px;
+    }
+
+  
+    .checkbox-container a {
+        color: #f34c55;
+    }
+
+    .checkbox-container a:hover {
+        opacity: .7;
+    }
+
+    .back {
+        margin: 10px 0;
+    }
+
+    .back-login {
+        color: #f34c55;
+    }
+
+    .checkbox-container > span {
+        text-align: center;
+    }
+
+    .btn {
+      border-radius: 5px;
+      color: #fff;
+      width: 50%;
+      height: 50px;
+      background:#f34c55;
+      font-size: 16px;
+      font-weight: 600;
+      transition-duration: 167ms;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+        opacity: .7;
+    }
+
+   

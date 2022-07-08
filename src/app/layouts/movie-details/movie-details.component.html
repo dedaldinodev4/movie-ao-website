@@ -1,0 +1,25 @@
+<div *ngIf="loading">
+    <app-loader></app-loader>
+</div>
+<div *ngIf="!loading" class="movie-details">
+    <div class="container">
+        <div class="detail-content">
+            <div>
+                <img [src]="url + movie?.image" />
+            </div>
+            <div>
+                <h2>{{ movie?.title }}</h2>
+                <p>{{ movie?.description }}</p>
+                <h3 *ngIf="moreInfo">Director: {{ movie?.director}}</h3><br/>
+                <div  *ngIf="moreInfo">
+                    <h3>Cast</h3>
+                    <p *ngFor="let c of movie?.cast">Character: {{ c?.character }} | Name: {{c?.name}}</p>
+                </div>
+            
+
+                <a (click)="openMoreInfo()"><button class="btn">{{moreInfo ?  'Menos Detalhes': 'Mais Detalhes'}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,59 @@
+<div class="register-container">
+    <div class="form-container">
+      <h2>Crie sua conta</h2>
+     
+      <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="input-container">
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="name"
+            placeholder="Seu nome"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="Seu E-mail"
+          />
+        </div>
+        <div class="🤪">
+          <div class="input-container">
+            <input
+              type="password"
+              name="password"
+              [(ngModel)]="password"
+              placeholder="Senha"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              name="confirmPassword"
+              [(ngModel)]="confirmPassword"
+              placeholder="Confirme a senha"
+            />
+          </div>
+        </div>
+        <div class="✅">
+          <div class="checkbox-container">
+            <span>Ao se registrar, você aceita nossos <a>termos de uso</a> e a nossa <a>política de privacidade.</a></span>
+          </div>
+        </div>
+        <div class="cta-container">
+          <button
+            class="btn"
+            type="submit"
+          >
+            Cadastrar
+          </button>
+          <div class="back">
+            <div ><a class="back-login" routerLink="/login">Já tenho uma conta</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  

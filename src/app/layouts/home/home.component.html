@@ -1,0 +1,20 @@
+<app-loader *ngIf="loading"></app-loader>
+
+<div *ngIf="!loading">
+    <div class="recommended-movie">
+        <div class="container" style="background-image: url(../../../assets/images/thor.jpg);">
+            <div class="desc">
+                <div class="title">{{ movie?.title }}</div>
+                <div class="about">{{ movie?.release_date}} ‧ Sci-Fi/Acção ‧ 2h:03min.</div>
+    
+            </div>
+        </div>
+    </div>
+    <app-movie-type
+    [MAX_Size]="6"
+    [MIN_Size] ="1"
+    [category]="'últimos Lançamentos'"
+    ></app-movie-type>
+
+</div>
+

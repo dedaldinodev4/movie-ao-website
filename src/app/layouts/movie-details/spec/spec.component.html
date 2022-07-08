@@ -1,0 +1,20 @@
+
+<div  class="movie-details">
+    <div class="container">
+        <div class="detail-content">
+            <div>
+                <img [src]="url + movie?.image" />
+            </div>
+            <div>
+                <h2>{{ movie?.title}}</h2>
+                <p>{{ movie?.description }}</p>
+                <h3>Director: {{ movie?.director}}</h3>
+                <ul>
+                    <li *ngFor="let c of movie?.cast">{{ c }}</li>
+                </ul>
+
+                <button class="btn">Mais Detalhes</button>
+            </div>
+        </div>
+    </div>
+</div>

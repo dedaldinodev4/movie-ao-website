@@ -1,0 +1,19 @@
+<div class="banner-movie">
+    <div class="container" style="background-image: url(../../../assets/images/logan.jpg);">
+        <div class="desc">
+            <div class="title">{{ movie?.title }} | Lançamento - {{movie?.release_date}}</div>
+            <div class="about">{{ movie?.description}}</div>
+        </div>
+    </div>
+</div>
+<app-movie-type 
+    [MAX_Size]="30"
+    [MIN_Size] ="25"
+    [category]="'Mais Populares'"
+></app-movie-type>
+<app-movie-type 
+    [MAX_Size]="35"
+    [MIN_Size] ="30"
+    [category]="'Meus Favoritos'"
+></app-movie-type>
+

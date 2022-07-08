@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  TOKEN_KEY : 'auth-token-movie',
+  USER_KEY : 'auth-user-movie',
+  API_BASEURL: 'http://localhost:3333',
+  MOVIE_BASEURL: 'https://movie-list.alphacamp.io/api/v1/movies',
+  MOVIE_IMAGE_URL: 'https://movie-list.alphacamp.io/posters/'
+
 };
 
 /*

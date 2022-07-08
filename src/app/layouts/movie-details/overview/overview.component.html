@@ -1,0 +1,18 @@
+<div *ngIf="loading">
+    <app-loader></app-loader>
+</div>
+<div *ngIf="!loading" class="movie-details">
+    <div class="container">
+        <div class="detail-content">
+            <div>
+                <img [src]="url + movie?.image" />
+            </div>
+            <div>
+                <h2>{{ movie?.title }}</h2>
+                <p>{{ movie?.description }}</p>
+
+                <a routerLink="spec"><button class="btn">Mais Detalhes</button></a>
+            </div>
+        </div>
+    </div>
+</div>

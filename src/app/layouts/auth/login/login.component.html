@@ -1,0 +1,35 @@
+<div class="login-container">
+    <div class="form-container">
+      <h2>Filme AO </h2>
+      <p>Faça seu login na plataforma</p>
+      <form (ngSubmit)="onSubmit()">
+        <div class="input-container">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            [(ngModel)]="email"
+          />
+        </div>
+        <div class="input-container">
+          <input
+            nz-input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            [(ngModel)]="password"
+          />
+        </div>
+        <div class="forgot-password">
+            <a>Esqueci minha conta</a>
+        </div>
+        <div class="cta-container">
+          <button  class="btn" type="submit"> Entrar </button>
+          <div class="register-btn">Não tem uma conta?<a routerLink="/register"> Registre-se</a></div>
+        </div>
+        
+  
+        
+      </form>
+    </div>
+  </div>

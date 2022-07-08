@@ -1,0 +1,19 @@
+.text-404 {
+    font-size: 60px; 
+    color: #fff; 
+    text-align: center; 
+    margin: 90px 0;
+}
+
+.container {
+    position: fixed;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #171d22;
+    z-index: 99999999999999;
+}
+
