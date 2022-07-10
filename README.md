@@ -14,4 +14,16 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Demo
+## Screenshots
+### Home
+![ScreenShot 01](/src/assets/screens/img1.png)
+
+### Movies List
+![ScreenShot 02](/src/assets/screens/img2.png)
+
+### Movie Details
+![ScreenShot 03](/src/assets/screens/img3.png)
+
+### Auth/Login & Register
+![ScreenShot 03](/src/assets/screens/img4.png)
+![ScreenShot 03](/src/assets/screens/img5.png)
